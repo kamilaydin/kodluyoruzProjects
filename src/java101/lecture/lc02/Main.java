@@ -1,4 +1,4 @@
-package java101;
+package java101.lecture.lc02;
 
 public class Main {
     public static void main(String[] args) {
