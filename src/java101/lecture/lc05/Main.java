@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double kdvOran =0.18, kdvOran2=0.08, fiyat;
-
+        double pi = 3.14, r, a;
+        System.out.println("Dairenin yarı çapını giriniz: ");
         Scanner input = new Scanner(System.in);
-        System.out.println("Urun fiyatı girin: ");
-        fiyat = input.nextDouble();
+        r = input.nextDouble();
+        System.out.println("Dairenin merkez acısını giriniz: ");
+        a = input.nextDouble();
+        System.out.println("daire diliminin alanı: " + ((pi * (r * r) * a)) / 360);
+        System.out.println("Toplam alan: "+ pi*r*r);
+        System.out.println("çevre: "+ 2*pi*r);
 
-        System.out.println("kdvli tutar: "+ ((fiyat<1000) ? fiyat+fiyat*kdvOran : fiyat+fiyat*kdvOran2 ));
     }
 }
