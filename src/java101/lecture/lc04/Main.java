@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+    
         double yol, kmFiyat = 2.2, acilisUcret = 10, fiyat;
         System.out.println("Kaç km yol gittiniz: ");
         Scanner input = new Scanner(System.in);
