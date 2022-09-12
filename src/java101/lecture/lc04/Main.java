@@ -4,12 +4,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        double kdvOran =0.18, kdvOran2=0.08, fiyat;
-
+        double yol,kmFiyat=2.2,acilisUcret=10,fiyat;
+        System.out.println("Kaç km yol gittiniz: ");
         Scanner input = new Scanner(System.in);
-        System.out.println("Urun fiyatı girin: ");
-        fiyat = input.nextDouble();
+        yol=input.nextDouble();
 
-        System.out.println("kdvli tutar: "+ ((fiyat<1000) ? fiyat+fiyat*kdvOran : fiyat+fiyat*kdvOran2 ));
+
+
+        System.out.println("Taksiye vereceginiz ucret : "+ ((yol*kmFiyat<10)?fiyat=20:yol*kmFiyat+acilisUcret));
+
+
     }
 }
