@@ -1,13 +1,50 @@
 package java101.lecture.lc08;
 
+import javax.sound.midi.SysexMessage;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        long x=12L;
-        System.out.println(x+" can be fitted in:");
-        if(x>=-128 && x<=127)System.out.println("* byte");
-        if(x>=-32768 && x<=32767)System.out.println("* short");
-        if(x>=-2147483648  && x<=2147483647)System.out.println("* integer");
-        if(x>=Long.MIN_VALUE  && x<=Long.MAX_VALUE)System.out.println("* long");
+
+        int x;
+        System.out.println("Toplama islemi icin 1: \n Çıkarma islemi icin 2: \n Çarpma islemi icin 3: \n Bölme islemi icin 4: \n ");
+        Scanner input = new Scanner(System.in);
+        x = input.nextInt();
+
+        switch(x){
+            case 1 :
+                System.out.println("Toplama islemini sectiniz : 2 eleman giriniz");
+                double a = input.nextInt();
+                double b = input.nextInt();
+                System.out.println(a+b);
+                break;
+
+            case 2:
+                System.out.println("Cıkarma islemini sectiniz : 2 eleman giriniz");
+                 a = input.nextInt();
+                 b = input.nextInt();
+                System.out.println(a-b);
+                break;
+
+            case 3 :
+                System.out.println("Carpma islemini sectiniz : 2 eleman giriniz");
+                a = input.nextInt();
+                b = input.nextInt();
+                System.out.println(a*b);
+                break;
+
+            case 4 :
+                System.out.println("Bölme islemini sectiniz : 2 eleman giriniz");
+                a = input.nextInt();
+                b = input.nextInt();
+                System.out.println(a/b);
+                break;
+
+            default:
+                System.out.println("Gecersiz bir sayı girdiniz tekrar deneyiniz");
+                break;
+
+        }
 
     }
 }
