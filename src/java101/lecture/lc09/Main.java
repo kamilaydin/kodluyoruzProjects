@@ -13,10 +13,5 @@ public class Main {
         if (userName.equals("kamil") && password.equals("aydin"))
             System.out.println("Basari ile giris yaptiniz");
         else System.out.println("Kullanıcı adı veya sifre yanlıs tekrar deneyiniz: ");
-
-
-        ;
-
-
     }
 }
