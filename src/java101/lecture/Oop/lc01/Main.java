@@ -2,9 +2,9 @@ package java101.lecture.Oop.lc01;
 
 public class Main {
     public static void main(String[] args) {
-        Course mat = new Course("Matematik", "MAT101", "MAT");
-        Course fizik = new Course("Fizik", "FZK101", "FZK");
-        Course kimya = new Course("Kimya", "KMY101", "KMY");
+        Course mat = new Course("Matematik", "MAT101", "MAT",60);
+        Course fizik = new Course("Fizik", "FZK101", "FZK",60);
+        Course kimya = new Course("Kimya", "KMY101", "KMY",60);
 
         Teacher t1 = new Teacher("Mahmut Hoca", "90550000000", "MAT");
         Teacher t2 = new Teacher("Fatma Ayşe", "90550000001", "FZK");
