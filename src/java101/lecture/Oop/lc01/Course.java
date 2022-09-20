@@ -19,6 +19,7 @@ public class Course {
         this.tNote=tNote;
         this.note=0;
     }
+
     public void addTeacher(Teacher t) {
         if (this.prefix.equals(t.branch)) {
             this.courseTeacher = t;
