@@ -1,10 +1,11 @@
 package java101.lecture.random.lc01;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+
         public static void main(String[] args) {
             Random rand = new Random();
             int number = rand.nextInt(100);
@@ -60,4 +61,4 @@ public class Main {
 
         }
     }
-}
+
