@@ -1,6 +1,8 @@
-package java101.practice;
+package hackerRank.JavaSubarray;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.OptionalInt;
+import java.util.Scanner;
 
 public class Main {
 
